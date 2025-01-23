@@ -28,6 +28,20 @@ This repository contains detailed explanations, implementations, and examples of
    - [Divide and Conquer](#divide-and-conquer)
    - [Graph Algorithms](#graph-algorithms)
 
+---
+
+## Introduction
+
+Algorithms and Data Structures are fundamental to computer science and programming. They form the foundation for solving complex problems efficiently. Mastering these concepts can help you:
+
+- Write efficient code.
+- Perform well in coding interviews.
+- Understand how software and systems work under the hood.
+
+This repository is aimed at beginners as well as experienced programmers who wish to revisit or deepen their understanding of these topics.
+
+---
+
 ## Big O Notation
 
 Big O Notation is a mathematical representation used to describe the performance or complexity of an algorithm. It provides an upper bound on the time or space required by an algorithm as a function of the input size (n).
