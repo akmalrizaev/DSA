@@ -27,3 +27,57 @@ This repository contains detailed explanations, implementations, and examples of
    - [Greedy Algorithms](#greedy-algorithms)
    - [Divide and Conquer](#divide-and-conquer)
    - [Graph Algorithms](#graph-algorithms)
+
+## Big O Notation
+
+Big O Notation is a mathematical representation used to describe the performance or complexity of an algorithm. It provides an upper bound on the time or space required by an algorithm as a function of the input size (n).
+
+### Why Big O Matters
+Understanding Big O notation is crucial because it allows us to:
+- Compare the efficiency of different algorithms.
+- Predict the scalability of an algorithm.
+- Identify bottlenecks in performance.
+
+### Common Big O Notations
+| Notation       | Name                 | Description                                                                 |
+|----------------|----------------------|-----------------------------------------------------------------------------|
+| **O(1)**       | Constant Time        | Algorithm takes the same amount of time regardless of input size.          |
+| **O(log n)**   | Logarithmic Time     | Algorithm reduces the problem size by half each time.                      |
+| **O(n)**       | Linear Time          | Algorithm time grows linearly with the input size.                         |
+| **O(n log n)** | Linearithmic Time    | Algorithm involves a linear operation and a logarithmic operation.         |
+| **O(n^2)**     | Quadratic Time       | Algorithm performance is proportional to the square of the input size.     |
+| **O(2^n)**     | Exponential Time     | Algorithm doubles in complexity with each additional input element.        |
+| **O(n!)**      | Factorial Time       | Algorithm complexity grows factorially with input size.                    |
+
+### Example Comparisons
+1. **O(1)**: Accessing an element in an array by index.
+   ```python
+   arr = [1, 2, 3]
+   print(arr[0])  # O(1)
+   ```
+
+2. **O(n)**: Finding an element in an unsorted array.
+   ```python
+   def find_element(arr, target):
+       for element in arr:
+           if element == target:
+               return True
+       return False
+   ```
+
+3. **O(log n)**: Binary search on a sorted array.
+   ```python
+   def binary_search(arr, target):
+       low, high = 0, len(arr) - 1
+       while low <= high:
+           mid = (low + high) // 2
+           if arr[mid] == target:
+               return mid
+           elif arr[mid] < target:
+               low = mid + 1
+           else:
+               high = mid - 1
+       return -1
+   ```
+
+By understanding and analyzing algorithms with Big O notation, you can write more efficient and scalable code.
